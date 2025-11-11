@@ -124,7 +124,7 @@ if __name__ == "__main__":
     fpga_parser.add_argument(
         "--board",
         help="select the FPGA board",
-        choices=('tt_fpga', 'efab_explain'),
+        choices=('tt_fpga', 'chipdiscover'),
         default='tt_fpga',
         required=False
     )
