@@ -23,9 +23,8 @@ module tt_fpga_top (
       .D_IN_0(uio_in),
   );
 
-  // DIP switch SW6: one row is GND, so closing = low at pin. Invert so close = high for user design.
   __tt_um_placeholder user_project (
-      .ui_in(~ui_in),
+      .ui_in(ui_in),
       .uo_out(uo_out),
       .uio_in(uio_in),
       .uio_out(uio_out),
